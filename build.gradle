@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'bue'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.14' // 對應自己下載的版本
+}
+
+
